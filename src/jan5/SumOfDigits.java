@@ -1,24 +1,24 @@
-package jan4;
+package jan5;
 import java.util.Scanner;
-public class SumofDigitsUptoSingleDigit {
+public class SumOfDigits {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number");
 		int num = scan.nextInt();
-		Sumdigits(num);
+		Proddigits(num);
 	}
-	public static void Sumdigits(int num) {
-		int sum=0;
+	public static void Proddigits(int num) {
+		int prod=1;
 		while(num>0) {
 			int rem=num%10;
-			sum+=rem;
+			prod*=rem;
 			num/=10;
 		}
-		if(sum>9) {
-			Sumdigits(sum);
+		if(prod>9) {
+			Proddigits(prod);
 		}
 		else {
-			System.out.println("The sum of the digits is "+sum);
+			System.out.println("The Product of the digits is "+prod);
 			return;
 		}
 	}
