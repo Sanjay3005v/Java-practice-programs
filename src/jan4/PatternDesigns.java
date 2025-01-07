@@ -55,6 +55,10 @@ public class PatternDesigns {
 			pattern12();
 			break;
 		}
+		case 13:{
+			pattern13();
+			break;
+		}
 		}
 	}
 	public static void pattern1() {
@@ -244,6 +248,20 @@ public class PatternDesigns {
 					}
 					else {
 						System.out.print(" ");
+					}
+				}
+				System.out.println();
+			}
+		}
+		public static void pattern13() {
+			char ch='A';
+			for(int row=1;row<=5;row++) {
+				for(int col=1;col<=5;col++) {
+					if(row==col) {
+						System.out.print(" "+ch++);
+					}
+					else {
+						System.out.print(" "+(row+col));
 					}
 				}
 				System.out.println();
