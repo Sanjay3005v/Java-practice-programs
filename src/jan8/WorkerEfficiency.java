@@ -6,6 +6,7 @@ public class WorkerEfficiency {
 		System.out.println("Enter the Time taken to complete the job");
 		int time = scan.nextInt();
 		Efficiency(time);
+		scan.close();
 	}
 	public static void Efficiency(int time) {
 		if (time>=2 && time<=3) {

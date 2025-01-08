@@ -6,6 +6,7 @@ public class SumOfDigits {
 		System.out.println("Enter the number");
 		int num = scan.nextInt();
 		Proddigits(num);
+		scan.close();
 	}
 	public static void Proddigits(int num) {
 		int prod=1;

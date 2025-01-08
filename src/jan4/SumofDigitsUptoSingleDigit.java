@@ -6,6 +6,7 @@ public class SumofDigitsUptoSingleDigit {
 		System.out.println("Enter the number");
 		int num = scan.nextInt();
 		Sumdigits(num);
+		scan.close();
 	}
 	public static void Sumdigits(int num) {
 		int sum=0;
