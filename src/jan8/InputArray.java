@@ -10,6 +10,7 @@ public class InputArray {
 		for(int i=0;i<size;i++) {
 			a[i]=scan.nextInt();
 		}
+		System.out.println("Output");
 		for(int i=0;i<size;i++) {
 			System.out.println(a[i]);
 		}
