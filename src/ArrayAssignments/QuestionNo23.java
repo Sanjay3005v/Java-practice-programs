@@ -1,6 +1,8 @@
-package jan8;
+//Read second half of the elements in the reverse direction from an array
+
+package ArrayAssignments;
 import java.util.Scanner;
-public class MinValInArray {
+public class QuestionNo23 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the size of the array");
@@ -10,16 +12,14 @@ public class MinValInArray {
 		for(int i=0;i<size;i++) {
 			a[i]=scan.nextInt();
 		}
+		half(a);
 		scan.close();
-		min(a);
-	}
-	public static void min(int[] a) {
-		int min=a[0];
-		for(int i=1;i<a.length;i++) {
-			if(a[i]<min) {
-				min=a[i];
-			}
 		}
-		System.out.println("The minimum value in the array is "+min);
+	public static void half(int[] a) {
+		int half=a.length/2;
+		System.out.println("The second half of the array in reverse order is ");
+		for(int i=a.length-1;i>=half;i--) {
+			System.out.println(a[i]);
+		}
 	}
 }

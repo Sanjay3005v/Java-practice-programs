@@ -14,7 +14,7 @@ public class QuestionNo22 {
 		}
 		half(a);
 		scan.close();
-	}
+	}	
 	public static void half(int[] a) {
 		int half=a.length/2;
 		System.out.println("The first half of the array in rverse order is");
