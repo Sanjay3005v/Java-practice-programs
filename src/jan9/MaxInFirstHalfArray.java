@@ -1,6 +1,10 @@
-package jan8;
+// Design a method to find the output maximum value in the first half of the array.
+
+
+
+package jan9;
 import java.util.Scanner;
-public class PrintFirstHalfOjArray {
+public class MaxInFirstHalfArray {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the size of the array");
@@ -15,9 +19,12 @@ public class PrintFirstHalfOjArray {
 		}
 	public static void half(int[] a) {
 		int half=a.length/2;
-		System.out.println("The first half of the array is");
+		int temp=a[0];
 		for(int i=0;i<half;i++) {
-			System.out.println(a[i]);
+			if(temp<a[i]) {
+				temp=a[i];
+			}
 		}
+		System.out.println("The maximum value in the first half of the array is "+temp);
 	}
 }

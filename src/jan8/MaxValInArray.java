@@ -11,11 +11,11 @@ public class MaxValInArray {
 			a[i]=scan.nextInt();
 		}
 		scan.close();
-		max(a,size);
+		max(a);
 	}
-	public static void max(int[] a,int size) {
+	public static void max(int[] a) {
 		int max=a[0];
-		for(int i=1;i<size;i++) {
+		for(int i=1;i<a.length;i++) {
 			if(max<=a[i]) {
 				max=a[i];
 			}
