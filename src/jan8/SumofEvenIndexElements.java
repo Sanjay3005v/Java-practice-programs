@@ -1,9 +1,17 @@
 package jan8;
-
+import java.util.Scanner;
 public class SumofEvenIndexElements {
 	public static void main(String[] args) {
-		int[] a= {1,2,3,4,5,6,7,8,9};
-		sum(a);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the size of the array");
+		int size = scan.nextInt();
+		int[] a= new int[size];
+		System.out.println("Enter the elements of the array");
+		for(int i=0;i<size;i++){
+			a[i]=scan.nextInt();
+		}
+		scan.close();
+		sum(a);	
 	}
 	public static void sum(int[] a) {
 		int sum=0;
