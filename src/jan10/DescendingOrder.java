@@ -1,3 +1,6 @@
+// Design a method to sort the array element in descending order.
+
+
 package jan10;
 import java.util.Scanner;
 public class DescendingOrder {

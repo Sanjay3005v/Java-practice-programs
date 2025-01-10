@@ -1,3 +1,6 @@
+//Design a method to right shift the elements of the array in 1
+
+
 package jan10;
 import java.util.Scanner;
 public class RightShiftNoOfTimes {
