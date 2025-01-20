@@ -6,11 +6,12 @@ public class dec26 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number:");
 		int num= scan.nextInt();
-		//String res = divby4and8(num);
+		String res = divby4and8(num);
 		//String res = endwith4(num);
 		//String res = div4and400butnot100(num);
 		
 		System.out.println(res);
+		scan.close();
 	}
 	public static String divby4and8(int num) {
 		boolean	ans = num%4==0 && num%8==0;
