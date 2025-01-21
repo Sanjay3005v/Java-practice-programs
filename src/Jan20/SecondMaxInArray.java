@@ -25,6 +25,9 @@ public class SecondMaxInArray {
 				max2=max;
 				max=a[i];
 			}
+			else if(max2<a[i]&& max!=a[i]) {
+				max2=a[i];
+			}
 		}
 		return max2;
 	}
