@@ -17,7 +17,6 @@ public class FrequencyOfElements {
 		scan.close();
 	}
 	public static void Frequency(int[] a){
-		
 		for(int i=0;i<a.length;i++) {
 			int count=1;
 			for(int j=i+1;j<a.length;j++) {
