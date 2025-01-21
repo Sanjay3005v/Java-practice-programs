@@ -1,3 +1,6 @@
+//Design a method to find second maximum value in the array.
+
+
 package Jan20;
 import java.util.*;
 public class SecondMaxInArray {
