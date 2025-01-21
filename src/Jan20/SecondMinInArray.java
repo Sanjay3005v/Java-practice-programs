@@ -1,9 +1,9 @@
-//Design a method to find second maximum value in the array.
+//Design a method to find second minimum value in the array.
 
 
 package Jan20;
 import java.util.*;
-public class SecondMaxInArray {
+public class SecondMinInArray {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the size of the array");
@@ -13,22 +13,22 @@ public class SecondMaxInArray {
 		for(int i=0;i<size;i++) {
 			a[i]= scan.nextInt();
 		}
-		int max2=Max2(a);
+		int min2=Min2(a);
 		scan.close();
-		System.out.println("The Second maximum is "+max2);
+		System.out.println("The Second minimum is "+min2);
 	}
-	public static int Max2(int[] a) {
-		int max=Integer.MAX_VALUE;
-		int max2=Integer.MAX_VALUE;
+	public static int Min2(int[] a) {
+		int min=Integer.MAX_VALUE;
+		int min2=Integer.MAX_VALUE;
 		for(int i=0;i<a.length;i++) {
-			if(max<a[i]) {
-				max2=max;
-				max=a[i];
+			if(min>a[i]) {
+				min2=min;
+				min=a[i];
 			}
-			else if(max2<a[i]&& max!=a[i]) {
-				max2=a[i];
+			else if(min2>a[i]&& min!=a[i]) {
+				min2=a[i];
 			}
 		}
-		return max2;
+		return min2;
 	}
 }
