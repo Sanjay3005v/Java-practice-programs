@@ -1,10 +1,9 @@
-//Design a method to read matrix elements from the users.
-
+//Design a method to show the addition of all the column elements individually in the matrix.
 
 
 package Jan22;
 import java.util.Scanner;
-public class Read2dArray {
+public class SumOfColumnMethod {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number of rows");
@@ -19,14 +18,16 @@ public class Read2dArray {
 			}
 		}
 		scan.close();
-		print(a,row,col);
+		Sum(a);
 	}
-	private static void print(int[][] a,int row,int col) {
-		for(int i=0;i<row;i++) {
-			for(int j=0;j<col;j++) {
-				System.out.print(a[i][j]+" ");
+	public static void Sum(int[][] a) {
+		for(int i=0;i<a.length;i++) {
+			int sum=0;
+			System.out.print("The sum of the column "+(i+1)+" elements is ");
+			for(int j=0;j<a[i].length;j++) {
+				sum+=a[j][i];
 			}
-			System.out.println();
+			System.out.println(sum);
 		}
 	}
 }
