@@ -1,6 +1,5 @@
 //Design a method to remove the even index elements of the array.
 
-
 package Jan23;
 import java.util.Arrays;
 import  java.util.Scanner;
@@ -14,8 +13,16 @@ public class RemoveEvenIndexElements {
 		for(int i=0;i<a.length;i++) {
 			a[i]= scan.nextInt();
 		}
+		int newsize;
 		scan.close();
-		int[] b= new int[size/2];
+		if(size%2==0) {
+			
+			newsize= size/2;
+		}
+		else {
+			 newsize=(size/2)+1;
+		}
+		int[] b= new int[newsize];
 		Removeeven(a,b);
 	}
 	public static void Removeeven(int[] a,int[] b) {
