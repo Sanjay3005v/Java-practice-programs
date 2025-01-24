@@ -1,4 +1,4 @@
-//Design a method to find all the missing elements present in the range of minimum and maximum value of the array.
+//Design a method to perform multiplication of two matrix and store the result between 3rd matrix.
 
 
 package Jan23;
@@ -26,6 +26,7 @@ public class ProductOfMatrix {
 		product(a,b);
 	}
 	public static void product(int[][] a,int[][] b ) {
+		System.out.println("The resultant matrix is");
 		int[][] c=new int[a.length][a.length];
 		for(int i=0;i<a.length;i++) {
 			for(int j=0;j<a.length;j++) {
