@@ -23,6 +23,7 @@ public class MissingElementInArray {
 		for(int i=0;i<a.length&&min<=max;i++) {	
 			if(min!=a[i]) {
 				System.out.println("The missing element is "+min);
+				min++;
 				break;
 			}
 			else {
