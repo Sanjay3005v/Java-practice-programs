@@ -30,5 +30,4 @@ public class MoveNegativeValueToLeftOfArray {
 		}
 		System.out.println(Arrays.toString(a));
 	}
-	
 }
