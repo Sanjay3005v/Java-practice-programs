@@ -4,7 +4,7 @@ public class ObjCreation {
 	String  brand;
 	double price;
 	String ram;
-	public static void display(ObjCreation Mobile) {
+	public  void display(ObjCreation Mobile) {
 		
 		System.out.println(Mobile.brand);
 		
