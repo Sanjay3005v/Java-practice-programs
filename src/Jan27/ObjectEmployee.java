@@ -34,7 +34,7 @@ class Employee{
 		System.out.println("Name  :"+Name);
 		System.out.println("ID    :"+id);
 		System.out.println("Salary:"+salary);
-		System.out.println();
+		System.out.println("=======================");
 	}
 
 }
