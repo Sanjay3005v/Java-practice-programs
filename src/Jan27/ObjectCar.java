@@ -1,3 +1,7 @@
+// Design a method for an Object car with three states create three car objects and assign value for three objects and print the value.
+
+
+
 package Jan27;
 
 public class ObjectCar {
