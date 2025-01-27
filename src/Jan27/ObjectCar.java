@@ -33,8 +33,8 @@ class car{
 	long price;
 	public void display() {
 		System.out.println("Company:"+Company);
-		System.out.println("Company:"+Model);
-		System.out.println("Company:"+price);
+		System.out.println("Model  :"+Model);
+		System.out.println("Price  :"+price);
 		System.out.println();
 	}
 
