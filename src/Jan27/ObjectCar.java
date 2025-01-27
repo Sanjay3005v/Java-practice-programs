@@ -28,9 +28,9 @@ class car{
 	String Model;
 	long price;
 	public void display() {
-		System.out.println("Company:"+this.Company);
-		System.out.println("Company:"+this.Model);
-		System.out.println("Company:"+this.price);
+		System.out.println("Company:"+Company);
+		System.out.println("Company:"+Model);
+		System.out.println("Company:"+price);
 		System.out.println();
 	}
 
