@@ -19,7 +19,7 @@ class Cars{
 	String Model;
 	long price;
 	
-	public  Cars(String Company,String Model,long price) {
+	public Cars(String Company,String Model,long price) {
 		this.Company=Company;
 		this.Model=Model;
 		this.price=price;
